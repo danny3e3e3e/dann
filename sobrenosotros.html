@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Mynex</title>
+    <link rel="icon" href="imagen/icono.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Importar la fuente Roboto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Roboto', sans-serif; /* Utilizar la fuente Roboto */
+            margin-bottom: 50px; /* Espacio en la parte inferior para el texto de derechos reservados */
+        }
+
+        header {
+            background-color: #0d47a1; /* Azul oscuro */
+            color: white; /* Texto blanco */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #1976d2; /* Azul */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white; /* Texto blanco */
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .about-info {
+            text-align: center;
+        }
+
+        .owner-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .owner-info {
+            width: 45%; /* Ancho de las columnas */
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            background-color: #f9f9f9; /* Fondo gris claro */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+        }
+
+        .owner-info h4 {
+            color: #0d47a1; /* Azul oscuro */
+            margin-bottom: 10px;
+            text-align: center; /* Centrar el nombre */
+        }
+
+        footer {
+            background-color: #0d47a1; /* Azul oscuro */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos para el texto de derechos reservados */
+        .copyright {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            color: white;
+            font-size: 14px;}
+
+          
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sobre Nosotros - Mynex</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="productos.html">Productos</a> |
+        <a href="contactos.html">Contacto</a> |
+        <a href="sobrenosotros.html">Sobre nosotros</a>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="about-info">
+                <h2 class="blue-text text-darken-4">¿Qué es MYNEX?</h2>
+                <h2 class="card-image">
+                    <img src="imagen/Logo.jpg" class="responsive-img col s12 m4" alt="Logo de Mynex"> <!-- Utilizando las clases de grid para definir el tamaño de la imagen -->
+                </h2>
+
+                <p>Somos una empresa dedicada a la venta de computadoras de alta calidad. Nuestro objetivo es proporcionar a nuestros clientes los mejores productos y servicios para satisfacer sus necesidades tecnológicas.</p>
+
+                <!-- Mover "Nuestros Fundadores" arriba de los nombres -->
+                <h3 class="blue-text text-darken-4">Nuestros Fundadores</h3>
+
+                <!-- Información sobre los dueños -->
+                <div class="owner-container">
+                    <div class="owner-info">
+                        <h4 class="blue-text text-darken-4">Jose Carlo Sandoval</h4>
+                        <p class="blue-text text-darken-4">Código y Enlaces</p>
+                        <p class="blue-text text-darken-4">XXX-XXX@mynex.com</p>
+                    </div>
+
+                    <div class="owner-info">
+                        <h4 class="blue-text text-darken-4">Luis Castedo</h4>
+                        <p class="blue-text text-darken-4">Imágenes</p>
+                        <p class="blue-text text-darken-4">XXX-XXX@mynex.com</p>
+                    </div>
+
+                    <div class="owner-info">
+                        <h4 class="blue-text text-darken-4">Rivaldo Ramirez Mamani</h4>
+                        <p class="blue-text text-darken-4">Código de la página</p>
+                        <p class="blue-text text-darken-4">XXX-XXX@mynex.com</p>
+                    </div>
+
+                    <div class="owner-info">
+                        <h4 class="blue-text text-darken-4">Daniel Rodriguez</h4>
+                        <p class="blue-text text-darken-4">Diseñador de la página</p>
+                        <p class="blue-text text-darken-4">XXX-XXX@mynex.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">© 2024 Mynex - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

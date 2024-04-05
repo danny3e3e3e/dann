@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mynex - Venta de Portátiles</title>
+    <link rel="icon" href="imagen/icono.ico" class="icono">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Archivo de estilos principal -->
+    <link rel="stylesheet" href="stylecontac.css"> <!-- Archivo de estilos para la página de contacto -->
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="blue darken-4"> <!-- Cambiado a color azul -->
+            <div class="nav-wrapper container">
+                <a href="otraprueba.html" class="brand-logo">Mynex - Venta de Computadoras</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contacto</a></li>
+                    <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+                    <!-- cpia y pegas para más productos -->
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="prodructos.html">Productos</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+           
+        </ul>
+    </header>
+    <main>
+        <section id="contacto" class="container">
+            <h2>Contacto</h2>
+            <p>Estamos ubicados en <strong>[Dirección]</strong>.</p>
+            <p>Puedes contactarnos al teléfono: <a href="https://wa.me/59176357714?text=Hola%2C%20me%20gustaría%20obtener%20más%20información" target="_blank" class="waves-effect waves-light btn">Chat de WhatsApp</a></p>
+            <p class="email">
+                mynextechinfo@gmail.com 
+                <span class="send-email">
+                    <a href="mailto:mynextechinfo@gmail.com?subject=Quiero obtener información sobre este producto&body=Mensaje..." class="waves-effect waves-light btn">Enviar correo</a>
+                </span>
+            </p>
+        </section>
+    </main>
+    
+    <footer class="page-footer blue darken-4">
+        <div class="container">
+            <p>&copy; 2024 Mynex - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+</html>

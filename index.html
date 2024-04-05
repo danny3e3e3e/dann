@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mynex - Venta de Portátiles</title>
+    <link rel="icon" href="imagen/icono.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        /* Agrega estilos personalizados aquí si es necesario */
+        .carousel {
+            width: 70%;
+            margin: auto;
+        }
+
+        .carousel .carousel-item img {
+            height: 400px;
+            width: auto;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="blue darken-4">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Mynex - Venta de Computadoras</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contacto</a></li>
+                    <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+    </ul>
+
+    <section>
+        <div class="container">
+            <h2 class="blue-text text-darken-2 center-align">Bienvenido a Mynex</h2>
+            <p class="flow-text center-align">¡Encuentra las mejores ofertas en computadoras!</p>
+        </div>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="imagen/web8.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="imagen/web3.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="imagen/web7.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="imagen/web6.jpg"></a>
+        </div>
+    </section>
+
+    <footer class="page-footer blue darken-4">
+        <div class="container">
+            <p class="white-text">© 2024 Mynex - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, { fullWidth: true });
+            var elems2 = document.querySelectorAll('.sidenav');
+            var instances2 = M.Sidenav.init(elems2);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mynex - Más Productos</title>
+    <link rel="icon" href="imagen/icono.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="productos.css"> <!-- Enlace al archivo CSS -->
+    <style>
+        /* Estilo para el botón "Ver más" */
+        .ver-mas-btn {
+            background-color: #039be5; /* Color de fondo */
+            color: #fff; /* Color del texto */
+        }
+
+        /* Estilo para agregar margen a los contenedores de productos */
+        .producto-container {
+            margin-bottom: 20px; /* Agrega margen inferior */
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="blue darken-4"> <!-- Cambiado a color azul -->
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Mynex - Más Productos</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a class="dropdown-trigger" href="#" data-target="dropdown1">
+                        Producto<i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="laptop.html">Laptops</a></li>
+                        <li><a href="monitores.html">Monitores</a></li>
+                        <li><a href="silla.html">Silla Gamer</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactos.html">contactarnos</a></li> <!-- Nuevo enlace a la página de productos -->
+                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="container">
+    <h2 class="center-align">Detalles de los productos</h2>
+    <div class="row">
+        <div class="card-action">
+            <!-- Primer silla gamer -->
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="imagen/silla4.jpg" alt="Silla Sharkoon">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">SKU: N/D</span>
+                        <p>Categoría: Sillas gamer</p>
+                        <p>Estado: Nuevo</p>
+                        <p>Envios: A toda Bolivia</p>
+                        <p>Marca: Sharkoon</p>
+                        <p>Precio: Precio no definido</p>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="https://www.paypal.com/bo/home" class="waves-effect waves-light btn blue darken-2" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda silla gamer -->
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="imagen/silla5.jpg" alt="Silla Sharkoon">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">SKU: N/D</span>
+                        <p>Categoría: Sillas gamer</p>
+                        <p>Estado: Nuevo</p>
+                        <p>Envios: A toda Bolivia</p>
+                        <p>Marca: Sharkoon</p>
+                        <p>Precio: Precio no definido</p>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="https://www.paypal.com/bo/home" class="waves-effect waves-light btn blue darken-2" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tercera silla gamer -->
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="imagen/sillagamer6.webp" alt="Silla DXRacer">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">SKU: N/D</span>
+                        <p>Categoría: Sillas gamer</p>
+                        <p>Estado: Nuevo</p>
+                        <p>Envios: A toda Bolivia</p>
+                        <p>Marca: DXRacer</p>
+                        <p>Color: Negro y Rojo</p>
+                        <p>Nombre del modelo: P Series</p>
+                        <p>Precio: Precio no definido</p>
+                    </div>
+                    <div class="card-action center-align">
+                        <a href="https://www.paypal.com/bo/home" class="waves-effect waves-light btn blue darken-2" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="page-footer blue darken-4" style="margin-top: 20px;"> <!-- Agregado margen superior -->
+    <div class="container">
+        <p class="white-text">© 2024 Mynex - Todos los derechos reservados</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+        var elems_dropdown = document.querySelectorAll('.dropdown-trigger');
+        var instances_dropdown = M.Dropdown.init(elems_dropdown, {});
+    });
+</script>
+</body>
+</html>
